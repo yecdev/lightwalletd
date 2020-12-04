@@ -20,9 +20,9 @@ import (
 	"google.golang.org/grpc/peer"
 	"google.golang.org/grpc/reflection"
 
-	"github.com/adityapk00/lightwalletd/common"
-	"github.com/adityapk00/lightwalletd/frontend"
-	"github.com/adityapk00/lightwalletd/walletrpc"
+	"github.com/yecdev/lightwalletd/common"
+	"github.com/yecdev/lightwalletd/frontend"
+	"github.com/yecdev/lightwalletd/walletrpc"
 )
 
 var log *logrus.Entry
@@ -137,7 +137,7 @@ func main() {
 
 	if !opts.noTLS && (opts.tlsCertPath == "" || opts.tlsKeyPath == "") {
 		println("Please specify a TLS certificate/key to use. You can use a self-signed certificate.")
-		println("See 'https://github.com/adityapk00/lightwalletd/blob/master/README.md#running-your-own-zeclite-lightwalletd'")
+		println("See 'https://github.com/yecdev/lightwalletd/blob/master/README.md#running-your-own-zeclite-lightwalletd'")
 		os.Exit(1)
 	}
 
@@ -187,7 +187,7 @@ func main() {
 	if err != nil {
 		log.WithFields(logrus.Fields{
 			"error": err,
-		}).Warn("zcash.conf failed, will try empty credentials for rpc")
+		}).Warn("ycash.conf failed, will try empty credentials for rpc")
 
 		rpcClient, err = frontend.NewZRPCFromCreds("127.0.0.1:8232", "", "")
 

@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/adityapk00/lightwalletd/parser"
-	"github.com/adityapk00/lightwalletd/walletrpc"
+	"github.com/yecdev/lightwalletd/parser"
+	"github.com/yecdev/lightwalletd/walletrpc"
 	"github.com/btcsuite/btcd/rpcclient"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"

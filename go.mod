@@ -1,9 +1,10 @@
-module github.com/adityapk00/lightwalletd
+module github.com/yecdev/lightwalletd
 
 go 1.12
 
 require (
 	cloud.google.com/go v0.46.3 // indirect
+	github.com/adityapk00/lightwalletd v0.0.0-20200628165945-e640edf40cec
 	github.com/btcsuite/btcd v0.0.0-20190926002857-ba530c4abb35
 	github.com/btcsuite/goleveldb v1.0.0 // indirect
 	github.com/creack/pty v1.1.9 // indirect

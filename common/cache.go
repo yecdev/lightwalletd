@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/adityapk00/lightwalletd/walletrpc"
+	"github.com/yecdev/lightwalletd/walletrpc"
 	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
