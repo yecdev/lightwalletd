@@ -78,8 +78,8 @@ func (s *SqlStreamer) GetAddressTxids(addressBlockFilter *walletrpc.TransparentA
 		return ErrUnspecified
 	}
 
-	// Test to make sure Address is a single t address
-	match, err := regexp.Match("^t[a-zA-Z0-9]{34}$", []byte(addressBlockFilter.Address))
+	// Test to make sure Address is a single s address
+	match, err := regexp.Match("^s[a-zA-Z0-9]{34}$", []byte(addressBlockFilter.Address))
 	if err != nil || !match {
 		s.metrics.TotalErrors.Inc()
 
